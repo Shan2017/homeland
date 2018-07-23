@@ -12,7 +12,7 @@ class CacheVersion
     method_name = method.to_s
     super(method, *args)
   rescue NoMethodError
-    if method_name.match?(/=$/)
+    if method_name.match(/=$/)
       var_name = method_name.sub("=", "")
       key      = CacheVersion.mk_key(var_name)
       value    = args.first.to_s

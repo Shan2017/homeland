@@ -7,7 +7,7 @@ GIT
       multi_json (>= 1.2)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://gems.ruby-china.org/
   specs:
     action-store (0.3.3)
       rails (~> 5)
